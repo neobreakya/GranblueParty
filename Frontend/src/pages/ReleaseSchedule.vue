@@ -46,6 +46,13 @@
           </button>
           <button
             class="btn btn-sm"
+            :class="show_obtain_classic2 ? 'btn-blue' : 'btn-white'"
+            @click="show_obtain_classic2 = ! show_obtain_classic2"
+          >
+            Classic Draw II
+          </button>
+          <button
+            class="btn btn-sm"
             :class="show_obtain_other ? 'btn-blue' : 'btn-white'"
             @click="show_obtain_other = ! show_obtain_other"
           >
@@ -173,6 +180,7 @@ export default {
       show_summons: true,
       show_obtain_premium: true,
       show_obtain_classic: true,
+      show_obtain_classic2: true,
       show_obtain_other: true,
       loading: true,
    }
@@ -222,6 +230,9 @@ export default {
           if ( ! this.show_obtain_classic && unit.d == 500) {
             return;
           }
+          if ( ! this.show_obtain_classic2 && unit.d == 600) {
+            return;
+          }
           if ( ! this.show_obtain_other && unit.d < 500) {
             return;
           }
@@ -249,6 +260,9 @@ export default {
             return;
           }
           if ( ! this.show_obtain_classic && unit.d == 500) {
+            return;
+          }
+          if ( ! this.show_obtain_classic2 && unit.d == 600) {
             return;
           }
           if ( ! this.show_obtain_other && unit.d < 500) {

@@ -333,13 +333,13 @@ const CAT_IMPOSSIBLE = {
       },
     },
   },
-  1030: {
+  1020: {
     name: 'Regalia',
     tier: 'impossible',
-    stars: 3,
-    cost: 60,
-    magfes: 30,
-    times: 2,
+    stars: 2,
+    cost: 50,
+    magfes: 25,
+    times: 3,
     raids: {
       '303151/1/0/522': {
         name: 'Shiva',
@@ -365,12 +365,30 @@ const CAT_IMPOSSIBLE = {
         name: 'Avatar',
         namejp: 'アバタ'
       },
+      '300471/1/0/1204': {
+        name: 'Rose Queen Showdown',
+        namejp: 'ローズクイーン',
+        times: 1
+      },
     }
+  },
+  1025: {
+    name: 'Regalia Pro',
+    tier: 'impossible',
+    stars: 2,
+    cost: 600,
+    magfes: 300,
+    times: 1,
+    raids: {
+      '305561/28/0/522': {
+        name: 'All Regalia',
+      },
+    },
   },
   1031: {
     name: 'Ennead',
     tier: 'impossible',
-    stars: 3,
+    stars: 2,
     cost: 60,
     magfes: 60,
     times: 2,
@@ -404,7 +422,7 @@ const CAT_IMPOSSIBLE = {
   1041: {
     name: 'Malice',
     tier: 'impossible',
-    stars: 5,
+    stars: 3,
     cost: 80,
     magfes: 40,
     times: 1,
@@ -466,9 +484,9 @@ const CAT_IMPOSSIBLE = {
     }
   },
   1050: {
-    name: '6 Stars',
+    name: '4 Stars',
     tier: 'impossible',
-    stars: 6,
+    stars: 4,
     raids: {
       '303231/1/0/6005': {
         name: 'Huanglong & Qilin',
@@ -500,10 +518,28 @@ const CAT_IMPOSSIBLE = {
       }
     }
   },
-  1060: {
-    name: 'Six-Dragons',
+  1055: {
+    name: 'Omega Rebirth',
     tier: 'impossible',
-    stars: 7,    
+    stars: 5,
+    cost: 50,
+    magfes: 25,
+    times: 3,
+    raids: {
+      '305601/1/0/525': {
+        name: 'Tiamat Aura Omega',
+        namejp: 'ティアマト・アウラマグナ',
+      },
+      '305591/1/0/526': {
+        name: 'Luminiera Credo Omega',
+        namejp: 'シュヴァリエ・クレドマグナ',
+      },
+    }
+  },
+  1060: {
+    name: 'Six Dragons',
+    tier: 'impossible',
+    stars: 5,
     cost: 50,
     magfes: 25,
     times: 1,
@@ -537,7 +573,7 @@ const CAT_IMPOSSIBLE = {
   1070: {
     name: 'Nightmare',
     tier: 'impossible',
-    stars: 7,    
+    stars: 6,    
     times: 1,
     raids: {
       '301061/1/0/59': {
@@ -569,7 +605,7 @@ const CAT_IMPOSSIBLE = {
   1080: {
     name: 'Astral',
     tier: 'impossible',
-    stars: 9,
+    stars: 7,
     cost: 100,
     magfes: 50,
     times: 1,
@@ -586,12 +622,16 @@ const CAT_IMPOSSIBLE = {
         name: 'Belial',
         namejp: 'ベリアル',
       },
+      '305571/1/0/25070': {
+        name: 'The World',
+        namejp: 'ザ・ワールド',
+      }
     }
   },
   1085: {
-    name: 'Automagod',
+    name: 'Revans',
     tier: 'impossible',
-    stars: 10,
+    stars: 7,
     cost: 100,
     magfes: 50,
     times: 1,
@@ -614,7 +654,7 @@ const CAT_IMPOSSIBLE = {
       },
       '305421/1/0/553': {
         name: 'Cosmos',
-        namejp: '',
+        namejp: 'コスモス',
       },
       '305431/1/0/554': {
         name: 'Agastia',
@@ -625,7 +665,7 @@ const CAT_IMPOSSIBLE = {
   1090: {
     name: 'Super Ultimate',
     tier: 'impossible',
-    stars: 10,
+    stars: 8,
     cost: 100,
     magfes: 50,
     times: 1,
@@ -637,6 +677,10 @@ const CAT_IMPOSSIBLE = {
       '305491/1/0/549': {
         name: 'Hexachromatic Hierarch',
         namejp: '天元たる六色の理',
+      },
+      '305581/1/0/538': {
+       name: 'Dark Rapture Zero',
+       namejp: 'ダーク・ラプチャー・ゼロ'
       }
     }
   },

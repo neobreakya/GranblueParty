@@ -726,7 +726,7 @@
     "family": "grappler",
     "row": "3",
     "ex": "1",
-    "icon": "Ability_Spirit.png"
+    "icon": "Ability_m_49_3.png"
   },
   {
     "class": "Ogre",
@@ -870,7 +870,7 @@
     "family": "lancer",
     "row": "3",
     "ex": "1",
-    "icon": "Ability_Spirit.png"
+    "icon": "Ability m 49 3.png"
   },
   {
     "class": "Valkyrie",
@@ -1054,12 +1054,12 @@
   },
   {
     "class": "Bandit Tycoon",
-    "name": "Spring's Gate",
+    "name": "Spring&#039;s Gate",
     "ix": "ex4",
     "family": "thief",
     "row": "4",
     "ex": "1",
-    "icon": "Ability Spring's Gate.png"
+    "icon": "Ability Spring&#039;s Gate.png"
   },
   {
     "class": "Bandit Tycoon",
@@ -1069,6 +1069,33 @@
     "row": "4",
     "ex": "0",
     "icon": "Ability_Assassin.png"
+  },
+  {
+    "class": "Bandit Tycoon",
+    "name": "Roll of the Dice",
+    "ix": "umex1",
+    "family": "thief",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2189_3.png"
+  },
+  {
+    "class": "Bandit Tycoon",
+    "name": "Sublime Springscape",
+    "ix": "umex2",
+    "family": "thief",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2190_1.png"
+  },
+  {
+    "class": "Bandit Tycoon",
+    "name": "Heart of Chivalry",
+    "ix": "umex3",
+    "family": "thief",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2191_3.png"
   },
   {
     "class": "Berserker",
@@ -1171,12 +1198,39 @@
   },
   {
     "class": "Cavalier",
-    "name": "Horseman's Duty",
+    "name": "Horseman&#039;s Duty",
     "ix": "s1",
     "family": "cavalier",
     "row": "4",
     "ex": "0",
-    "icon": "Ability Horseman's Duty.png"
+    "icon": "Ability Horseman&#039;s Duty.png"
+  },
+  {
+    "class": "Cavalier",
+    "name": "Valorous Assault",
+    "ix": "umex1",
+    "family": "cavalier",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2260_1.png"
+  },
+  {
+    "class": "Cavalier",
+    "name": "Mounted Bulwark",
+    "ix": "umex2",
+    "family": "cavalier",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2261_3.png"
+  },
+  {
+    "class": "Cavalier",
+    "name": "Field Commander",
+    "ix": "umex3",
+    "family": "cavalier",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2262_3.png"
   },
   {
     "class": "Chaos Ruler",
@@ -1477,12 +1531,12 @@
   },
   {
     "class": "Lumberjack",
-    "name": "Woodcutter's Song",
+    "name": "Woodcutter&#039;s Song",
     "ix": "s1",
     "family": "lumberjack",
     "row": "4",
     "ex": "0",
-    "icon": "Ability Woodcutter's Song.png"
+    "icon": "Ability Woodcutter&#039;s Song.png"
   },
   {
     "class": "Lumberjack",
@@ -1548,6 +1602,33 @@
     "icon": "Ability_m_1197_1.png"
   },
   {
+    "class": "Monk",
+    "name": "Mystic Restoration",
+    "ix": "umex1",
+    "family": "monk",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2186_3.png"
+  },
+  {
+    "class": "Monk",
+    "name": "Fervent Focus",
+    "ix": "umex2",
+    "family": "monk",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2187_3.png"
+  },
+  {
+    "class": "Monk",
+    "name": "Enlightened Fury",
+    "ix": "umex3",
+    "family": "monk",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2188_1.png"
+  },
+  {
     "class": "Nighthound",
     "name": "Tactical Relocation",
     "ix": "ex1",
@@ -1602,6 +1683,33 @@
     "icon": "Ability m 313_1.png"
   },
   {
+    "class": "Nighthound",
+    "name": "Homing Beacon",
+    "ix": "umex1",
+    "family": "ranger",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2180_4.png"
+  },
+  {
+    "class": "Nighthound",
+    "name": "Stealth Protocol",
+    "ix": "umex2",
+    "family": "ranger",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2181_3.png"
+  },
+  {
+    "class": "Nighthound",
+    "name": "Rearguard Relocation",
+    "ix": "umex3",
+    "family": "ranger",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2182_3.png"
+  },
+  {
     "class": "Relic Buster",
     "name": "Tactical Shield",
     "ix": "ex1",
@@ -1636,6 +1744,33 @@
     "row": "4",
     "ex": "0",
     "icon": "Ability_m_1416_3.png"
+  },
+  {
+    "class": "Relic Buster",
+    "name": "Lightning Shot",
+    "ix": "umex1",
+    "family": "relicbuster",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2263_1.png"
+  },
+  {
+    "class": "Relic Buster",
+    "name": "Hypervelocity",
+    "ix": "umex2",
+    "family": "relicbuster",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2264_1.png"
+  },
+  {
+    "class": "Relic Buster",
+    "name": "Brutal Cell",
+    "ix": "umex3",
+    "family": "relicbuster",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2265_1.png"
   },
   {
     "class": "Robin Hood",
@@ -1756,7 +1891,7 @@
   },
   {
     "class": "Sage",
-    "name": "Cathedral's Benison",
+    "name": "Cathedral&#039;s Benison",
     "ix": "umex3",
     "family": "priest",
     "row": "4",
@@ -1935,6 +2070,33 @@
     "icon": "Ability_m_1964_1.png"
   },
   {
+    "class": "Yamato",
+    "name": "Breath of the Serpent",
+    "ix": "umex1",
+    "family": "yamato",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2266_3.png"
+  },
+  {
+    "class": "Yamato",
+    "name": "Ameno Totsuka",
+    "ix": "umex2",
+    "family": "yamato",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2267_1.png"
+  },
+  {
+    "class": "Yamato",
+    "name": "Sanctifying Kagura",
+    "ix": "umex3",
+    "family": "yamato",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2268_3.png"
+  },
+  {
     "class": "Iatromantis",
     "name": "Amyntiko Fos",
     "ix": "ex1",
@@ -2007,6 +2169,42 @@
     "icon": "Ability_m_1921_1.png"
   },
   {
+    "class": "Onmyoji",
+    "name": "Shikigami: Mizuchi",
+    "ix": "ex1",
+    "family": "enhancer",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2286_1.png"
+  },
+  {
+    "class": "Onmyoji",
+    "name": "Celestial Genesis",
+    "ix": "ex2",
+    "family": "enhancer",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2287_3.png"
+  },
+  {
+    "class": "Onmyoji",
+    "name": "Execration / Five-Phase Seal",
+    "ix": "ex3",
+    "family": "enhancer",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2288_4.png,Ability_m_2289_4.png"
+  },
+  {
+    "class": "Onmyoji",
+    "name": "Sealing Talisman",
+    "ix": "s1",
+    "family": "enhancer",
+    "row": "5",
+    "ex": "0",
+    "icon": "Ability_m_2285_3.png"
+  },
+  {
     "class": "Paladin",
     "name": "Noblesse Proteger",
     "ix": "ex1",
@@ -2053,7 +2251,7 @@
   },
   {
     "class": "Street King",
-    "name": "Parfait d'Amour",
+    "name": "Parfait d&#039;Amour",
     "ix": "ex2",
     "family": "thief",
     "row": "5",
@@ -2287,7 +2485,7 @@
   },
   {
     "class": "Gunslinger",
-    "name": "Lock 'n' Load",
+    "name": "Lock &#039;n&#039; Load",
     "ix": "s3",
     "family": "gunslinger",
     "row": "11",
@@ -2593,7 +2791,7 @@
   },
   {
     "class": "Glorybringer",
-    "name": "Mastery's Edge",
+    "name": "Mastery&#039;s Edge",
     "ix": "umex3",
     "family": "swordmaster",
     "row": "12",
@@ -2700,13 +2898,40 @@
     "icon": "Ability m 1412 3.png \u200e"
   },
   {
+    "class": "Masquerade",
+    "name": "On the Waltz",
+    "ix": "umex1",
+    "family": "dancer",
+    "row": "12",
+    "ex": "1",
+    "icon": "Ability_m_2269_3.png"
+  },
+  {
+    "class": "Masquerade",
+    "name": "Spiral Turn",
+    "ix": "umex2",
+    "family": "dancer",
+    "row": "12",
+    "ex": "1",
+    "icon": "Ability_m_2270_1.png"
+  },
+  {
+    "class": "Masquerade",
+    "name": "Martial Choreography",
+    "ix": "umex3",
+    "family": "dancer",
+    "row": "12",
+    "ex": "1",
+    "icon": "Ability_m_2271_3.png"
+  },
+  {
     "class": "Nekomancer",
-    "name": "Black Cat's Path",
+    "name": "Black Cat&#039;s Path",
     "ix": "ex1",
     "family": "mystic",
     "row": "12",
     "ex": "1",
-    "icon": "Ability Black Cat's Path.png"
+    "icon": "Ability Black Cat&#039;s Path.png"
   },
   {
     "class": "Nekomancer",
@@ -2728,12 +2953,12 @@
   },
   {
     "class": "Nekomancer",
-    "name": "Cat's Meow",
+    "name": "Cat&#039;s Meow",
     "ix": "s1",
     "family": "mystic",
     "row": "12",
     "ex": "0",
-    "icon": "Ability Cat's Meow.png"
+    "icon": "Ability Cat&#039;s Meow.png"
   },
   {
     "class": "Nekomancer",
@@ -2797,6 +3022,33 @@
     "row": "12",
     "ex": "0",
     "icon": "Ability Rising Force.png"
+  },
+  {
+    "class": "Rising Force",
+    "name": "Fever Pitch",
+    "ix": "umex1",
+    "family": "drummaster",
+    "row": "12",
+    "ex": "1",
+    "icon": "Ability_m_2183_3.png"
+  },
+  {
+    "class": "Rising Force",
+    "name": "Pinch Harmonics",
+    "ix": "umex2",
+    "family": "drummaster",
+    "row": "12",
+    "ex": "1",
+    "icon": "Ability_m_2184_1.png"
+  },
+  {
+    "class": "Rising Force",
+    "name": "Everlasting Bonds",
+    "ix": "umex3",
+    "family": "drummaster",
+    "row": "12",
+    "ex": "1",
+    "icon": "Ability_m_2185_3.png"
   },
   {
     "class": "Runeslayer",

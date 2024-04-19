@@ -64,6 +64,8 @@
                     <span class="tag bg-primary">{{ chara_count[1000] }}/{{ chara_total[1000] }}</span></li>
                 <li><label><input type="checkbox" v-model="chara_show[500]"> Classic Draw</label>
                     <span class="tag bg-primary">{{ chara_count[500] }}/{{ chara_total[500] }}</span></li>
+                <li><label><input type="checkbox" v-model="chara_show[600]"> Classic Draw II</label>
+                    <span class="tag bg-primary">{{ chara_count[600] }}/{{ chara_total[600] }}</span></li>
                 <li><label><input type="checkbox" v-model="chara_show[1010]"> Valentine</label>
                     <span class="tag bg-primary">{{ chara_count[1010] }}/{{ chara_total[1010] }}</span></li>
                 <li><label><input type="checkbox" v-model="chara_show[1020]"> Holiday</label>
@@ -101,6 +103,8 @@
                     <span class="tag bg-primary">{{ summon_count[1000] }}/{{ summon_total[1000] }}</span></li>
                 <li><label><input type="checkbox" v-model="summon_show[500]"> Classic Draw</label>
                     <span class="tag bg-primary">{{ summon_count[500] }}/{{ summon_total[500] }}</span></li>
+                <li><label><input type="checkbox" v-model="summon_show[600]"> Classic Draw II</label>
+                    <span class="tag bg-primary">{{ summon_count[600] }}/{{ summon_total[600] }}</span></li>
                 <li><label><input type="checkbox" v-model="summon_show[1020]"> Holiday</label>
                     <span class="tag bg-primary">{{ summon_count[1020] }}/{{ summon_total[1020] }}</span></li>
                 <li><label><input type="checkbox" v-model="summon_show[1030]"> Summer</label>
@@ -329,12 +333,12 @@ const INITIAL_DATA = () => {
   return {
     // Add the corresponding values in the store (collection-tracker.js)
     chara_show: {
-      null: true, 10: true, 20: true, 500: true,
+      null: true, 10: true, 20: true, 500: true, 600: true,
       1000: true, 1010: true, 1020: true, 1030: true, 1040: true, 1050: true,
       1500: true, 1600: true,
     },
     summon_show: {
-      null: true, 20: true, 500: true,
+      null: true, 20: true, 500: true, 600: true,
       1000: true, 1020: true, 1030: true,
       1600: true,
     },

@@ -151,16 +151,16 @@
 150	Diptych	10	t
 151	Aurum Flow	10	t
 152	Alchemize Green Potion	11	f
-153	Just the Cure	\N	t
-154	A Little Pick-Me-Up	\N	t
+153	Just the Cure	11	t
+154	A Little Pick-Me-Up	11	t
 155	Fury Capsule	11	t
 156	Ninjutsu	12	f
-157	Fuma Shuriken	\N	t
-158	Haze	\N	t
+157	Fuma Shuriken	12	t
+158	Haze	12	t
 159	Home-Made Bomb	12	t
 160	Finishing Touch	13	f
-161	Self Reflection	\N	t
-162	Quiet Strategy	\N	t
+161	Self Reflection	13	t
+162	Quiet Strategy	13	t
 163	Into Thin Air	13	t
 164	Awakening Blade	14	f
 165	Resonating Blade	14	t
@@ -172,10 +172,10 @@
 171	Blitzburst	15	t
 172	Omnipotent Eye	16	f
 173	Fate Foreseen	16	t
-174	Splitting Spirit	\N	t
+174	Splitting Spirit	16	t
 175	Third Eye	16	t
 176	Selectively Skilled	17	f
-177	Out of Sight	\N	t
+177	Out of Sight	17	t
 178	Retaliation Reprise	17	t
 179	Conceal	17	t
 180	Drum Roll	18	f
@@ -272,6 +272,10 @@
 271	Watch and Wound	26	t
 272	Whitehail Gust	26	t
 273	Seasplitter	26	t
+274	Sealing Talisman	5	f
+275	Shikigami: Mizuchi	5	t
+276	Celestial Genesis	5	t
+277	Execration / Five-Phase Seal	5	t
 10000	Nyagrodha	9	f
 10001	Crowning Fluidity	9	f
 10002	Showstopper	9	f
@@ -329,3 +333,27 @@
 10054	Demonic Flare	3	f
 10055	Arcane Field	3	f
 10056	Crest Discharge	3	f
+10057	Roll of the Dice	4	f
+10058	Sublime Springscape	4	f
+10059	Heart of Chivalry	4	f
+10060	Homing Beacon	7	f
+10061	Stealth Protocol	7	f
+10062	Rearguard Relocation	7	f
+10063	Mystic Restoration	23	f
+10064	Fervent Focus	23	f
+10065	Enlightened Fury	23	f
+10066	Fever Pitch	18	f
+10067	Pinch Harmonics	18	f
+10068	Everlasting Bonds	18	f
+10069	Valorous Assault	22	f
+10070	Mounted Bulwark	22	f
+10071	Field Commander	22	f
+10072	On the Waltz	19	f
+10073	Spiral Turn	19	f
+10074	Martial Choreography	19	f
+10075	Lightning Shot	25	f
+10076	Hypervelocity	25	f
+10077	Brutal Cell	25	f
+10078	Breath of the Serpent	26	f
+10079	Ameno Totsuka	26	f
+10080	Sanctifying Kagura	26	f

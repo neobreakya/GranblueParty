@@ -215,12 +215,16 @@ export default {
       const addComponents = (items, mult = 1) => {
         for (let item of items) {
           if (this.getComponentsPerBullet.hasOwnProperty(item.image)) {
+            let needed_quantity = item.quantity;
             // It's a bullet, do we have stock?
             if (bulletStock.hasOwnProperty(item.image) && bulletStock[item.image] > 0) {
-              bulletStock[item.image]--;
+              while (needed_quantity > 0 && bulletStock[item.image] > 0) {
+                needed_quantity--;
+                bulletStock[item.image]--;
+              }
             }
-            else {
-              addComponents(this.getComponentsPerBullet[item.image], item.quantity * mult);
+            if (needed_quantity > 0) {
+              addComponents(this.getComponentsPerBullet[item.image], needed_quantity * mult);
             }
           }
           else if (allComponents.hasOwnProperty(item.image)) {

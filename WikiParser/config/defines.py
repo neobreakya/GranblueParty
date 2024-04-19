@@ -13,6 +13,7 @@ OBTAIN = {
   'Eternal': 10,
   'Evoker': 20,
   '[[Classic Draw]]': 500,
+  '[[Classic Draw II]]': 600,
   '[[Premium Draw]]': 1000,
   '[[Draw#Premium_Draw|Premium Draw]]': 1000,
   '[[Draw#Premium|Premium Draw]]': 1000,
@@ -47,6 +48,7 @@ CLASSES = [
 	('Doctor', 200301), ('Runeslayer', 210301), ('Kengo', 220301), ('Glorybringer', 230301), ('Soldier', 240301), ('Nekomancer', 250301), ('Tormentor', 260301), ('Rising Force', 270301), ('Lumberjack', 410301), ('Cavalier', 420301),
   ('Monk', 430301), ('Robin Hood', 440301), ('Masquerade', 280301), ('Relic Buster', 450301),
   ('Viking', 100401), ('Paladin', 110401), ('Iatromantis', 120401), ('Manadiver', 130401), ('Yamato', 460301), ('Street King', 140401),
+  ('Onmyoji', 150401)
 ]
 
 IGNORE_MISSING_SKILL = {'3358', '3855', '3936', '4055', '4080', '4200', '4302'}

@@ -28,8 +28,8 @@
 
       <div class="mb-4 px-4 py-2 bg-secondary rounded">
         <h2 class="text-center">Last update</h2>
-        <h3 class="text-center">2023-10-31</h3>
-        <p class="text-center mt-2">Sevilbarra, Utsusemi</p>
+        <h3 class="text-center">2024-04-15</h3>
+        <p class="text-center mt-2">Spinnah, Anne (Light)</p>
       </div>
 
       <div class="mb-4 px-4 py-2 bg-secondary rounded">

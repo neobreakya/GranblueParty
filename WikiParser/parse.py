@@ -206,19 +206,28 @@ def downloadCategory(path, category):
   cmcontinue = ''
 
   while True:
+    params = {
+      'action': 'query',
+      'prop': 'info',
+      'generator': 'categorymembers',
+      'gcmtitle': 'Category:' + category,
+      'format': 'json',
+      'gcmlimit': limit,
+      'gcmcontinue': cmcontinue
+    }
     request = sessionGet(
       url = 'https://gbf.wiki/api.php',
-      params = {
-        'action': 'query',
-        'prop': 'info',
-        'generator': 'categorymembers',
-        'gcmtitle': 'Category:' + category,
-        'format': 'json',
-        'gcmlimit': limit,
-        'gcmcontinue': cmcontinue
-      })
-    
-    request_json = request.json()
+      params = params)
+
+    try:
+      request_json = request.json()
+    except:
+      if request.status_code == 403:
+        print("API 403, retry in 5s", cmcontinue)
+        time.sleep(5)
+        continue
+      else:
+        raise
 
     if 'warnings' in request_json:
       print(request_json['warnings'])
@@ -233,7 +242,8 @@ def downloadCategory(path, category):
       results += [res_values]
 
     if 'continue' in request_json:
-      cmcontinue = request_json['continue']['gcmcontinue']      
+      cmcontinue = request_json['continue']['gcmcontinue']
+      time.sleep(1) # Don't hammer the server
     else:
       break
 
@@ -265,6 +275,7 @@ def updateCache(category):
             'action': 'query',
             'prop': 'revisions',
             'rvprop': 'content',
+            #'rvslots': '*',
             'format': 'json',
             'pageids': unit['pageid']
           })
@@ -564,9 +575,11 @@ def updateSummons():
         if obtainValue.startswith("premium"):
           if obtainValue == 'premium,normal' or obtainValue == 'premium,classic,normal':
             obtain = defines.OBTAIN['[[Premium Draw]]']
+          elif obtainValue == 'premium,classic2,normal' or obtainValue == 'premium,classic2,normal,non-ticketable':
+            obtain = defines.OBTAIN['[[Classic Draw II]]']
           elif obtainValue == 'premium,summer' or obtainValue == 'premium,swimsuit':
             obtain = defines.OBTAIN['Summer Premium Draw']
-          elif obtainValue == 'premium,non-ticketable' or obtainValue == 'premium,classic,non-ticketable' or obtainValue == 'premium,premium,non-ticketable' or obtainValue == 'premium,normal,non-ticketable' or obtainValue == 'premium,classic,normal,non-ticketable':
+          elif obtainValue == 'premium,non-ticketable' or obtainValue == 'premium,unticketable' or obtainValue == 'premium,classic,non-ticketable' or obtainValue == 'premium,premium,non-ticketable' or obtainValue == 'premium,normal,non-ticketable' or obtainValue == 'premium,classic,normal,non-ticketable' or obtainValue == 'premium,normal,unticketable':
             obtain = defines.OBTAIN['Premium Gala']
           elif obtainValue == 'premium,holiday':
             obtain = defines.OBTAIN['Holiday Premium Draw']
@@ -574,6 +587,8 @@ def updateSummons():
             obtain = None
           else:
             print('Unknown premium value for summon ' + page_title + ': ' + obtainValue)
+        elif obtainValue.startswith("classic2"):
+          obtain = defines.OBTAIN['[[Classic Draw II]]']
         elif obtainValue.startswith("classic"):
           obtain = defines.OBTAIN['[[Classic Draw]]']
         elif summon_id in defines.SUMMON_EVOKERS:
@@ -789,7 +804,7 @@ def updateWeapons():
           skillname = weapon.get(s + 'name')
           if skillname is None:
             continue
-          skillname = skillname.strip().replace('  ', ' ')
+          skillname = html.unescape(skillname.strip().replace('  ', ' '))
 
           # Ignore skills with no names. Sometimes, they have non-existing icons...
           if len(skillname) > 0 and len(weapon.get(s + 'icon')) > 0:
@@ -885,8 +900,15 @@ def updateClasses():
       "Couteau Royal": 10038, "Parfait d'Amour": 10039, "La Manteau Du Roi": 10040, "Aperitif": 10041,
       "Deuce Xiphos": 10042, "Astrapste": 10043, "Amber Edge": 10044, "Primary Care": 10045, "Outperform": 10046, "High Immunity": 10047,
       "Verdant Melody": 10048, "Birdsong of Balmy Breeze": 10049, "Log Lop": 10050, "Thousand Arrows": 10051, "Rebellion Shot": 10052,
-      "Rapid Nocking": 10053, "Demonic Flare": 10054, "Arcane Field": 10055, "Crest Discharge": 10056
-      }
+      "Rapid Nocking": 10053, "Demonic Flare": 10054, "Arcane Field": 10055, "Crest Discharge": 10056,
+      "Roll of the Dice": 10057, "Sublime Springscape": 10058, "Heart of Chivalry": 10059, "Homing Beacon": 10060,
+      "Stealth Protocol": 10061, "Rearguard Relocation": 10062, "Mystic Restoration": 10063, "Fervent Focus": 10064, 
+      "Enlightened Fury": 10065, "Fever Pitch": 10066, "Pinch Harmonics": 10067, "Everlasting Bonds": 10068, 
+      "Valorous Assault": 10069, "Mounted Bulwark": 10070, "Field Commander": 10071,
+      "On the Waltz": 10072, "Spiral Turn": 10073, "Martial Choreography": 10074,
+      "Lightning Shot": 10075, "Hypervelocity": 10076, "Brutal Cell": 10077,
+      "Breath of the Serpent": 10078, "Ameno Totsuka": 10079, "Sanctifying Kagura": 10080,
+    }
 
     for (classe_name, classe_id) in defines.CLASSES:
       row = ''
@@ -919,25 +941,27 @@ def updateClasses():
           isExMastery = True
         
         skill_id = len(skill_values) - new_skills_added - um_skills_added
+        skill_name = html.unescape(skill['name'])
         if skill_id >= 224:
           skill_id += new_skills_added
-        if skill['name'] in new_skills:
-          skill_id = new_skills[skill['name']]
+        if skill_name in new_skills:
+          skill_id = new_skills[skill_name]
           new_skills_added += 1
-        elif skill['name'] in um_skills:
-          skill_id = um_skills[skill['name']]
+        elif skill_name in um_skills:
+          skill_id = um_skills[skill_name]
           um_skills_added += 1
 
         skill_filename = os.path.join(images_dir, str(skill_id) + '.png')
         if not os.path.isfile(skill_filename):
-          skill_url = getImageURL(skill['icon'])
+          # icon can contain a ,
+          skill_url = getImageURL(skill['icon'].split(',')[0])
           print("Writing", skill_url, 'to', skill_filename)
           r = sessionGet(skill_url)
 
           with open(skill_filename, 'wb') as image_file:                  
             image_file.write(r.content)
         
-        skill_values += [(skill_id, skill['name'], None if isSubSkill else families[family_name], isExMastery)]
+        skill_values += [(skill_id, skill_name, None if isSubSkill else families[family_name], isExMastery)]
 
         if skill['ix'][0] == 's':
           skills[int(skill['ix'][1:]) - 1] = skill_id        
