@@ -84,6 +84,9 @@ const EVOKERS_DATA = Object.freeze({
     new MaterialStep('Uncap Evoker 5*',
       [{"item":"sephiraevolite","q":1},{"group":"gospel","q":50},{"group":"luster","q":50},{"item":"sephirastone","q":200},{"item":"rupie","q":100000}]
     ),
+    new MaterialStep('Unlock 4th skill',
+      [{"item":"sunlightstone","q":1},{"item":"worldidean","q":100},{"item":"newworldquartz","q":30},{"item":"damascuscrystal","q":10}]
+    ),
   ]
 });
 

@@ -249,7 +249,7 @@ const CAT_STANDARD = {
     stars: 8,
     cost: 50,
     magfes: 25,
-    times: 1,
+    times: 2,
     raids: {
       '303101/1/0/5311': {
         name: 'Michael',
@@ -530,9 +530,25 @@ const CAT_IMPOSSIBLE = {
         name: 'Tiamat Aura Omega',
         namejp: 'ティアマト・アウラマグナ',
       },
+      '305611/1/0/522': {
+        name: 'Colossus Ira Omega',
+        namejp: 'コロッサス・イラマグナ'
+      },
       '305591/1/0/526': {
         name: 'Luminiera Credo Omega',
         namejp: 'シュヴァリエ・クレドマグナ',
+      },
+      '305631/1/0/523': {
+        name: 'Leviathan Mare Omega',
+        namejp: 'リヴァイアサン・マレマグナ',
+      },
+      '305641/1/0/524': {
+        name: 'Yggdrasil Arbos Omega',
+        namejp: 'ユグドラシル・アルボスマグナ',
+      },
+      '305621/1/0/527': {
+        name: 'Celeste Ater Omega',
+        namejp: 'セレスト・アーテルマグナ',
       },
     }
   },

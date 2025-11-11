@@ -8,14 +8,14 @@ import sys
 from config import defines
 import mwparserfromhell
 
-from config.wikirequest import getImageURL, sessionGet
+from config.wikirequest import getImageURL, seleniumGet, requestsGet
 
 FRONTEND_DEST = os.path.join(os.getcwd(), '..', defines.getConfig('config/config.ini', 'path')['frontend'], 'src', 'js')
 FRONTEND_IMAGES = os.path.join(os.getcwd(), '..', defines.getConfig('config/config.ini', 'path')['frontend'], 'src', 'img', 'item')
 
 # Write BulletTooltips template to bullets.page
 def getTemplate():
-  request = sessionGet(
+  request = seleniumGet(
     url = 'https://gbf.wiki/api.php',
     params = {
       'action': 'query',
@@ -29,7 +29,7 @@ def getTemplate():
   # https://gbf.wiki/api.php?action=query&prop=revisions&titles=Template:BulletTooltips&rvprop=content&format=json
   # BulletTable: 95741
   # BulletTooltips: 20493
-  request_json = request.json()['query']['pages']['20493']['revisions'][0]['slots']['main']['*']
+  request_json = request['query']['pages']['20493']['revisions'][0]['slots']['main']['*']
   with open(os.path.join('data', 'bullets.page'), 'w', encoding='utf8') as wiki_file:
     wiki_file.write(request_json)
 
@@ -105,7 +105,7 @@ class Image:
     if not self.hasImage():
       print("Downloading " + self.image_src)
       image_url = getImageURL(self.image_src)
-      r = sessionGet(image_url)
+      r = requestsGet(image_url)
       with open(self.image_dest, 'wb') as image_file:
         image_file.write(r.content)
 

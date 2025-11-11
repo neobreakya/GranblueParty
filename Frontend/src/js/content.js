@@ -52,6 +52,9 @@ export default [
       { name: 'Violet Knight', id: 125 },
       { name: 'White Knight', id: 126 },
       { name: 'Cherub', id: 127 },
+      { name: 'Zwei', id: 128 },
+      { name: 'Kikuri', id: 129 },
+      { name: 'Maxwell', id: 130 },
     ]
   },
   {
@@ -74,6 +77,7 @@ export default [
       { name: 'Zone Joculator', id: 206 },
       { name: 'Zone Kalendae', id: 207 },
       { name: 'Zone Liber', id: 208 },
+      { name: 'Zone Mundus', id: 209 },
     ]
   },
   ... filterContent(Raids.CAT_STANDARD),

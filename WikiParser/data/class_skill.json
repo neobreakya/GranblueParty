@@ -1,5 +1,41 @@
 [
   {
+    "class": "Fighter Origin",
+    "name": "Charge Conversion",
+    "ix": "ex1",
+    "family": "fighter",
+    "row": "0",
+    "ex": "1",
+    "icon": "Ability_m_2708_3.png"
+  },
+  {
+    "class": "Fighter Origin",
+    "name": "Dawnbreak",
+    "ix": "ex2",
+    "family": "fighter",
+    "row": "0",
+    "ex": "1",
+    "icon": "Ability_m_2709_1.png"
+  },
+  {
+    "class": "Fighter Origin",
+    "name": "Unlimited Boost",
+    "ix": "ex3",
+    "family": "fighter",
+    "row": "0",
+    "ex": "1",
+    "icon": "Ability_m_2712_3.png"
+  },
+  {
+    "class": "Fighter Origin",
+    "name": "Full Arsenal IV",
+    "ix": "s1",
+    "family": "fighter",
+    "row": "0",
+    "ex": "0",
+    "icon": "Ability_m_2710_3.png"
+  },
+  {
     "class": "Enhancer",
     "name": "Stall",
     "ix": "s1",
@@ -106,6 +142,15 @@
     "row": "1",
     "ex": "0",
     "icon": "Ability_Piercing.png"
+  },
+  {
+    "class": "Orologia (Summon)",
+    "name": "Transcendent Blue",
+    "ix": "s1",
+    "family": "summon",
+    "row": "1",
+    "ex": "0",
+    "icon": "Ability_m_2516_3.png"
   },
   {
     "class": "Priest",
@@ -1819,6 +1864,15 @@
   },
   {
     "class": "Robin Hood",
+    "name": "Sweeping Arrow",
+    "ix": "umex1a",
+    "family": "robinhood",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability s 9 1.jpg"
+  },
+  {
+    "class": "Robin Hood",
     "name": "Rebellion Shot",
     "ix": "umex2",
     "family": "robinhood",
@@ -1828,12 +1882,30 @@
   },
   {
     "class": "Robin Hood",
+    "name": "Deepshot Arrow",
+    "ix": "umex2a",
+    "family": "robinhood",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability s 9 2.jpg"
+  },
+  {
+    "class": "Robin Hood",
     "name": "Rapid Nocking",
     "ix": "umex3",
     "family": "robinhood",
     "row": "4",
     "ex": "1",
     "icon": "Ability m 2150_3.png"
+  },
+  {
+    "class": "Robin Hood",
+    "name": "Affliction Arrow",
+    "ix": "umex3a",
+    "family": "robinhood",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability s 9 3.jpg"
   },
   {
     "class": "Sage",
@@ -1897,6 +1969,69 @@
     "row": "4",
     "ex": "1",
     "icon": "Ability_m_2013_3.png"
+  },
+  {
+    "class": "Shieldsworn",
+    "name": "Assault Drive / Weapon Discharge",
+    "ix": "ex1",
+    "family": "shieldsworn",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2350_1.png,Ability_m_2351_1.png"
+  },
+  {
+    "class": "Shieldsworn",
+    "name": "Marshaling Shout",
+    "ix": "ex2",
+    "family": "shieldsworn",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2352_3.png"
+  },
+  {
+    "class": "Shieldsworn",
+    "name": "Regimented Formation",
+    "ix": "ex3",
+    "family": "shieldsworn",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability_m_2353_3.png"
+  },
+  {
+    "class": "Shieldsworn",
+    "name": "Shield of Valor",
+    "ix": "s1",
+    "family": "shieldsworn",
+    "row": "4",
+    "ex": "0",
+    "icon": "Ability_m_2349_3.png"
+  },
+  {
+    "class": "Shieldsworn",
+    "name": "Combat Shield",
+    "ix": "umex1",
+    "family": "shieldsworn",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability m 2562_3.png"
+  },
+  {
+    "class": "Shieldsworn",
+    "name": "Defiance",
+    "ix": "umex2",
+    "family": "shieldsworn",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability m 2563_3.png"
+  },
+  {
+    "class": "Shieldsworn",
+    "name": "Shield Hurl",
+    "ix": "umex3",
+    "family": "shieldsworn",
+    "row": "4",
+    "ex": "1",
+    "icon": "Ability m 2564_1.png"
   },
   {
     "class": "Spartan",
@@ -2097,6 +2232,42 @@
     "icon": "Ability_m_2268_3.png"
   },
   {
+    "class": "Boogeyman",
+    "name": "Blood Oath",
+    "ix": "ex1",
+    "family": "ranger",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2551_3.png"
+  },
+  {
+    "class": "Boogeyman",
+    "name": "Bespoke Tailoring",
+    "ix": "ex2",
+    "family": "ranger",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2552_3.png"
+  },
+  {
+    "class": "Boogeyman",
+    "name": "Sei Colpi",
+    "ix": "ex3",
+    "family": "ranger",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2550_4.png"
+  },
+  {
+    "class": "Boogeyman",
+    "name": "Parabellum Rain",
+    "ix": "s1",
+    "family": "ranger",
+    "row": "5",
+    "ex": "0",
+    "icon": "Ability_m_2553_1.png"
+  },
+  {
     "class": "Iatromantis",
     "name": "Amyntiko Fos",
     "ix": "ex1",
@@ -2167,6 +2338,60 @@
     "row": "5",
     "ex": "0",
     "icon": "Ability_m_1921_1.png"
+  },
+  {
+    "class": "Mariachi",
+    "name": "Pizzicato",
+    "ix": "ex1",
+    "family": "harpist",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2622_1.png"
+  },
+  {
+    "class": "Mariachi",
+    "name": "Ensemble of Heroes",
+    "ix": "ex1a",
+    "family": "harpist",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_s_17_1.jpg"
+  },
+  {
+    "class": "Mariachi",
+    "name": "Despierta, Mi Bien",
+    "ix": "ex2",
+    "family": "harpist",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2623_2.png"
+  },
+  {
+    "class": "Mariachi",
+    "name": "Ensemble of Warriors",
+    "ix": "ex2a",
+    "family": "harpist",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_s_17_2.jpg"
+  },
+  {
+    "class": "Mariachi",
+    "name": "Ultimate Ensemble",
+    "ix": "ex3",
+    "family": "harpist",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2624_3.png"
+  },
+  {
+    "class": "Mariachi",
+    "name": "Empezar a Tocar",
+    "ix": "s1",
+    "family": "harpist",
+    "row": "5",
+    "ex": "0",
+    "icon": "Ability_m_2621_3.png"
   },
   {
     "class": "Onmyoji",
@@ -2260,7 +2485,7 @@
   },
   {
     "class": "Street King",
-    "name": "La Manteau Du Roi",
+    "name": "Le Manteau du Roi",
     "ix": "ex3",
     "family": "thief",
     "row": "5",
@@ -2275,6 +2500,78 @@
     "row": "5",
     "ex": "0",
     "icon": "Ability_m_2110_3.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "Ultimate Palm Strike",
+    "ix": "ex1",
+    "family": "grappler",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2375_1.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "Sky Splitter",
+    "ix": "ex1a",
+    "family": "grappler",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability m 2423_1.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "In the Face of Adversity",
+    "ix": "ex2",
+    "family": "grappler",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2421_3.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "Salt of Cleansing Spirits",
+    "ix": "ex2a",
+    "family": "grappler",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability m 2424_2.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "Sumai Meet",
+    "ix": "ex3",
+    "family": "grappler",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability_m_2422_3.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "Combat Spirit Infusion",
+    "ix": "ex3a",
+    "family": "grappler",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability m 2374_3.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "Spirit Suppression",
+    "ix": "ex4a",
+    "family": "grappler",
+    "row": "5",
+    "ex": "1",
+    "icon": "Ability m 2425_4.png"
+  },
+  {
+    "class": "Sumaibito",
+    "name": "Shiranui Stance",
+    "ix": "s1",
+    "family": "grappler",
+    "row": "5",
+    "ex": "0",
+    "icon": "Ability_m_2420_1.png"
   },
   {
     "class": "Viking",

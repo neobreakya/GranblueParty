@@ -13,7 +13,7 @@ import time
 import mwparserfromhell
 
 from config import defines
-from config.wikirequest import getImageURL, sessionGet
+from config.wikirequest import getImageURL, seleniumGet, requestsGet
 import database
 
 # Parse description tooltips
@@ -159,7 +159,7 @@ def downloadCargo(path, table, where = '', order_by = 'id', unique_ident = ['id'
   offset = 0
   limit = 500
   while True:
-    request = sessionGet(
+    request_json = seleniumGet(
       url = 'https://gbf.wiki/api.php',
       params = {
         'action': 'cargoquery',
@@ -171,8 +171,6 @@ def downloadCargo(path, table, where = '', order_by = 'id', unique_ident = ['id'
         'offset': offset,
         'where': where
       })
-
-    request_json = request.json()
 
     if 'warnings' in request_json:
       print(request_json['warnings'])
@@ -215,19 +213,9 @@ def downloadCategory(path, category):
       'gcmlimit': limit,
       'gcmcontinue': cmcontinue
     }
-    request = sessionGet(
+    request_json = seleniumGet(
       url = 'https://gbf.wiki/api.php',
       params = params)
-
-    try:
-      request_json = request.json()
-    except:
-      if request.status_code == 403:
-        print("API 403, retry in 5s", cmcontinue)
-        time.sleep(5)
-        continue
-      else:
-        raise
 
     if 'warnings' in request_json:
       print(request_json['warnings'])
@@ -269,7 +257,7 @@ def updateCache(category):
       if not os.path.isfile(page_name) or not page_id in data_revs or data_revs[page_id] != unit['lastrevid']:
         print("Downloading ", page_title, ' [' + page_id + ']')
         time.sleep(.1) # Don't hammer the server
-        request = sessionGet(
+        request = seleniumGet(
           url = 'https://gbf.wiki/api.php',
           params = {
             'action': 'query',
@@ -280,7 +268,7 @@ def updateCache(category):
             'pageids': unit['pageid']
           })
         
-        request_json = request.json()['query']['pages'][page_id]['revisions'][0]['*']
+        request_json = request['query']['pages'][page_id]['revisions'][0]['*']
         with open(page_name, 'w', encoding='utf8') as wiki_file:
           wiki_file.write(request_json)
         
@@ -388,7 +376,7 @@ def updateCharacters():
 
           # Obtain
           recruit_id = None
-          recruit = getTemplateValue(template, 'join')
+          recruit = getTemplateValue(template, 'join').split('<br')[0]
           if recruit:
             if character_id in defines.CHARA_EVOKERS:
               recruit = 'Evoker'
@@ -467,13 +455,7 @@ def updateCharacters():
 
                 # Look for skill img
                 skill_filename = os.path.join(images_dir, str(character_id) + '_' + str(i-1) + '.png')
-                if not os.path.isfile(skill_filename):
-                  skill_url = getImageURL(skill_icon)
-                  print("Writing", skill_url, 'to', skill_filename)
-                  r = sessionGet(skill_url)
-
-                  with open(skill_filename, 'wb') as image_file:                  
-                    image_file.write(r.content)
+                downloadSkillIcon(skill_icon, skill_filename)
 
           # Skins
           for s in skins:
@@ -683,12 +665,11 @@ def updateSummons():
     print(values)
 
 
-def downloadSkillIcon(images_dir, icon):
-  skill_filename = os.path.join(images_dir, icon)
+def downloadSkillIcon(icon, skill_filename):
   if not os.path.isfile(skill_filename):
     skill_url = getImageURL(icon)
     print("Writing", skill_url, 'to', skill_filename)
-    r = sessionGet(skill_url)
+    r = requestsGet(skill_url)
 
     with open(skill_filename, 'wb') as image_file:                  
       image_file.write(r.content)
@@ -809,12 +790,12 @@ def updateWeapons():
           # Ignore skills with no names. Sometimes, they have non-existing icons...
           if len(skillname) > 0 and len(weapon.get(s + 'icon')) > 0:
             icon = weapon.get(s + 'icon').lower().replace(' ', '_')
-            downloadSkillIcon(images_dir, icon)
+            downloadSkillIcon(icon, os.path.join(images_dir, icon))
 
             skill_key = defines.getWeaponSkillKey(int(weapon_id), i)
             if skill_key != None:
               for key_image in defines.WEAPONS_KEYS_ICONS[skill_key]:              
-                downloadSkillIcon(images_dir, key_image)
+                downloadSkillIcon(key_image, os.path.join(images_dir, key_image))
 
             skill_lvl = defines.toInt(weapon.get(s + 'lvl'))
             if s == 's1u1 ' and skill_lvl == 1:
@@ -897,7 +878,7 @@ def updateClasses():
       "Multiplying Magic":10023,"Circle of Coalescence":10024,"Quadruple Hex":10025, "Thermopylae": 10026, "Hoplite": 10027, "Molon Labe": 10028,
       "Lucha de Parejas": 10029, "Fight Song": 10030, "Vez de Rudo": 10031, "Fatal Venom": 10032, "Thousand Slices": 10033, "Executing Blow": 10034,
       "Combat Rations": 10035, "Immortal Operative": 10036, "Ammunition Belt": 10037,
-      "Couteau Royal": 10038, "Parfait d'Amour": 10039, "La Manteau Du Roi": 10040, "Aperitif": 10041,
+      "Couteau Royal": 10038, "Parfait d'Amour": 10039, "Le Manteau du Roi": 10040, "Aperitif": 10041,
       "Deuce Xiphos": 10042, "Astrapste": 10043, "Amber Edge": 10044, "Primary Care": 10045, "Outperform": 10046, "High Immunity": 10047,
       "Verdant Melody": 10048, "Birdsong of Balmy Breeze": 10049, "Log Lop": 10050, "Thousand Arrows": 10051, "Rebellion Shot": 10052,
       "Rapid Nocking": 10053, "Demonic Flare": 10054, "Arcane Field": 10055, "Crest Discharge": 10056,
@@ -908,6 +889,8 @@ def updateClasses():
       "On the Waltz": 10072, "Spiral Turn": 10073, "Martial Choreography": 10074,
       "Lightning Shot": 10075, "Hypervelocity": 10076, "Brutal Cell": 10077,
       "Breath of the Serpent": 10078, "Ameno Totsuka": 10079, "Sanctifying Kagura": 10080,
+      "Ultimate Palm Strike": 10081, "In the Face of Adversity": 10082, "Sumai Meet": 10083, "Shiranui Stance": 10084,
+      "Combat Shield": 10085, "Defiance": 10086, "Shield Hurl": 10087
     }
 
     for (classe_name, classe_id) in defines.CLASSES:
@@ -933,6 +916,9 @@ def updateClasses():
 
         if skill['ex'] != '1' and skill['ex'] != '0':
           raise ValueError('Bad ex value for ' + skill['name'])
+        
+        if skill['ix'][-1] == 'a':
+          continue
 
         isSubSkill = skill['ix'][0] == 's' and int(skill['ix'][1]) > 1 and (skill['ex'] == '1' or row == '1' or row == '2' or row == '3')
         isExMastery = skill['ix'][0] == 'e'
@@ -952,14 +938,7 @@ def updateClasses():
           um_skills_added += 1
 
         skill_filename = os.path.join(images_dir, str(skill_id) + '.png')
-        if not os.path.isfile(skill_filename):
-          # icon can contain a ,
-          skill_url = getImageURL(skill['icon'].split(',')[0])
-          print("Writing", skill_url, 'to', skill_filename)
-          r = sessionGet(skill_url)
-
-          with open(skill_filename, 'wb') as image_file:                  
-            image_file.write(r.content)
+        downloadSkillIcon(skill['icon'].split(',')[0], skill_filename)
         
         skill_values += [(skill_id, skill_name, None if isSubSkill else families[family_name], isExMastery)]
 

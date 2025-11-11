@@ -1,4 +1,4 @@
 #!/bin/sh
-./parse.py -d
-./parse.py --all
-./database.py --dump
+pdm run ./parse.py -d
+pdm run ./parse.py --all
+pdm run ./database.py --dump

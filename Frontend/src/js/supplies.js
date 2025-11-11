@@ -254,6 +254,7 @@ const items = Object.freeze({
   moonidean: new Item('Moon Idean', Categories.arcarum),
   sunidean: new Item('Sun Idean', Categories.arcarum),
   judgementidean: new Item('Judgement Idean', Categories.arcarum),
+  worldidean: new Item('World Idean', Categories.arcarum),
   // Veritas
 	justiceveritas: new Item('Justice Veritas', Categories.arcarum),
   hangedmanveritas: new Item('Hanged Man Veritas', Categories.arcarum),

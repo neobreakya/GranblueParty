@@ -276,6 +276,14 @@
 275	Shikigami: Mizuchi	5	t
 276	Celestial Genesis	5	t
 277	Execration / Five-Phase Seal	5	t
+278	Shield of Valor	27	f
+279	Assault Drive / Weapon Discharge	27	t
+280	Marshaling Shout	27	t
+281	Regimented Formation	27	t
+282	Parabellum Rain	7	f
+283	Blood Oath	7	t
+284	Bespoke Tailoring	7	t
+285	Sei Colpi	7	t
 10000	Nyagrodha	9	f
 10001	Crowning Fluidity	9	f
 10002	Showstopper	9	f
@@ -316,7 +324,7 @@
 10037	Ammunition Belt	15	f
 10038	Couteau Royal	4	t
 10039	Parfait d'Amour	4	t
-10040	La Manteau Du Roi	4	t
+10040	Le Manteau du Roi	4	t
 10041	Aperitif	4	f
 10042	Deuce Xiphos	10	f
 10043	Astrapste	10	f
@@ -357,3 +365,10 @@
 10078	Breath of the Serpent	26	f
 10079	Ameno Totsuka	26	f
 10080	Sanctifying Kagura	26	f
+10081	Ultimate Palm Strike	6	t
+10082	In the Face of Adversity	6	t
+10083	Sumai Meet	6	t
+10084	Shiranui Stance	6	f
+10085	Combat Shield	27	f
+10086	Defiance	27	f
+10087	Shield Hurl	27	f

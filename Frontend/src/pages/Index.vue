@@ -3,6 +3,14 @@
     <h1 class="self-center">Granblue <span title="Party">&#x1F389;</span></h1>
     <h2 class="self-center">Useful tools for Granblue Fantasy</h2>
 
+    <div class="mt-8 p-8 text-center self-center bg-secondary rounded">
+      <span class="tag bg-red-500">Warning</span> <b>The site will close on December 7th, 2025.</b><br>
+      Thank you for all those years of support.<br>
+      I stopped playing years ago, so staying up to date with
+      the new content became increasingly difficult.<br>
+      The source code for the whole site will stay on my Github, so feel free to fork the repo and give this site a second life.
+    </div>
+
     <!-- About -->
     <div class="pt-16 flex flex-row flex-wrap justify-evenly">
       <div class="mb-4 px-4 py-2 bg-secondary rounded">
@@ -28,8 +36,8 @@
 
       <div class="mb-4 px-4 py-2 bg-secondary rounded">
         <h2 class="text-center">Last update</h2>
-        <h3 class="text-center">2024-04-15</h3>
-        <p class="text-center mt-2">Spinnah, Anne (Light)</p>
+        <h3 class="text-center">2025-10-16</h3>
+        <p class="text-center mt-2">Vajra, Lancelot, Tien</p>
       </div>
 
       <div class="mb-4 px-4 py-2 bg-secondary rounded">

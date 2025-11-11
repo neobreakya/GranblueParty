@@ -310,7 +310,7 @@ export default {
     },
     filterCompletedItems(unitKey, matKey, items) {
       if (this.hideCompletedMats) {
-        return items.filter(item => this.getQuantityForItem(unitKey, matKey, item.item) != item.max);
+        return items.filter(item => this.getQuantityForItem(unitKey, matKey, item.item) < item.max);
       }
       return items;
     },

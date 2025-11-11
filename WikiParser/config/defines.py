@@ -48,7 +48,7 @@ CLASSES = [
 	('Doctor', 200301), ('Runeslayer', 210301), ('Kengo', 220301), ('Glorybringer', 230301), ('Soldier', 240301), ('Nekomancer', 250301), ('Tormentor', 260301), ('Rising Force', 270301), ('Lumberjack', 410301), ('Cavalier', 420301),
   ('Monk', 430301), ('Robin Hood', 440301), ('Masquerade', 280301), ('Relic Buster', 450301),
   ('Viking', 100401), ('Paladin', 110401), ('Iatromantis', 120401), ('Manadiver', 130401), ('Yamato', 460301), ('Street King', 140401),
-  ('Onmyoji', 150401)
+  ('Onmyoji', 150401), ('Shieldsworn', 470301), ('Sumaibito', 160401), ('Boogeyman', 170401)
 ]
 
 IGNORE_MISSING_SKILL = {'3358', '3855', '3936', '4055', '4080', '4200', '4302'}
@@ -137,7 +137,8 @@ def toInt(str):
 		return 1
 	return int(str)
 
-ix_map = {'s1': 1, 's2': 2, 's3': 3, 's4': 4, 'ex1': 5, 'ex2': 6, 'ex3': 7, 'ex4': 8, 'ex5': 9, 'umex1': 10, 'umex2': 11, 'umex3': 12, }
+ix_map = {'s1': 1, 's2': 2, 's3': 3, 's4': 4, 'ex1': 5, 'ex2': 6, 'ex3': 7, 'ex4': 8, 'ex5': 9, 'umex1': 10, 'umex2': 11, 'umex3': 12,
+          'ex1a': 5, 'ex2a': 6, 'ex3a': 7, 'ex4a': 8, 'ex5a': 9, 'umex1a': 10, 'umex2a': 11, 'umex3a': 12, }
 
 def sortClasse(a, b):
   if ix_map[a['ix']] < ix_map[b['ix']]:

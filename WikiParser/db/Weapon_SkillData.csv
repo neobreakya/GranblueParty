@@ -543,7 +543,7 @@
 542	ws_skill_atk_a_4_3.png	Devicer	{"data":[{"percent":{"1":6,"10":15,"15":18,"20":21},"restriction":{"element":["wind"]},"aura_type":"ex","stat":"atk"}]}	big
 543	ws_skill_job_weapon.png	Yes, My Lord!	\N	\N
 544	ws_skill_deadly_m_1_2.png	Ironflame's Sentence	{"data":[{"percent":{"1":2.5,"10":7,"15":9.5},"restriction":{"element":["fire"]},"stat":"ca_dmg","aura_type":"omega"},{"percent":{"1":2.5,"10":7,"15":9.5},"restriction":{"element":["fire"]},"stat":"ca_cap","aura_type":"omega"}]}	medium
-545	ws_skill_job_weapon.png	Triple Talon Hellion	\N	massive
+545	ws_skill_job_weapon.png	Triple Talon Hellion	\N	big
 546	ws_skill_counter_m_1_3.png	Ironflame's Clarity II	\N	\N
 547	ws_skill_job_weapon.png	Harbinger of Destruction	\N	\N
 548	ws_skill_job_weapon.png	Strength to Spare	\N	\N
@@ -1346,3 +1346,220 @@
 1345	ws_skill_ta_m_5_1.png	Knightcode's Trium	\N	small
 1346	ws_skill_job_weapon.png	Realm-Breaker's Animus	\N	\N
 1347	ws_skill_heal_limit_5_1.png	Light's Healing	\N	small
+1348	ws_skill_sp_atk_6_1.png	Dark's Mystery	\N	small
+1349	ws_skill_job_weapon.png	Ironflame's Progression III	\N	big
+1350	ws_skill_hp_a_5_3.png	Resilient Shine	\N	big
+1351	ws_skill_atk_m_3_3.png	Lifetree's Might III	\N	big
+1352	ws_skill_musou_m_1_2.png	Ironflame's Primacy II	\N	medium
+1353	ws_skill_hp_m_1_1.png	Ironflame's Aegis	\N	small
+1354	ws_skill_atk_m_4_3.png	Stormwyrm's Might III	\N	big
+1355	ws_skill_atk_m_2_3.png	Oceansoul's Might III	\N	big
+1356	ws_skill_hp_m_5_1.png	Knightcode's Aegis	\N	small
+1357	ws_skill_heal_limit_m_1_3.png	Ironflame's Healing III	\N	big
+1358	ws_skill_grace_m_1_1.png	Ironflame's Grace	\N	small
+1359	ws_skill_hp_m_3_2.png	Lifetree's Aegis II	\N	medium
+1360	ws_skill_atk_m_1_3.png	Ironflame's Might III	\N	big
+1361	ws_skill_tec_heal_limit_m_6_2.png	Mistfall's Precocity II	\N	medium
+1362	ws_skill_guard_m_6_2.png	Mistfall's Garrison II	\N	medium
+1363	ws_skill_sp_atk_5_2.png	Thunder's Mystery	\N	medium
+1364	ws_skill_hp_m_4_2.png	Stormwyrm's Aegis II	\N	medium
+1365	ws_skill_atk_m_6_3.png	Mistfall's Might III	\N	big
+1366	ws_skill_tec_m_2_3.png	Oceansoul's Verity III	\N	big
+1367	ws_skill_atk_m_1_2.png	Ironflame's Might II	\N	medium
+1368	ws_skill_atk_m_4_2.png	Stormwyrm's Might II	\N	medium
+1369	ws_skill_atk_m_3_2.png	Lifetree's Might II	\N	medium
+1370	ws_skill_coki_m_3.png	Lifetree's Restraint II	\N	medium
+1371	ws_skill_whole_m_5_2.png	Knightcode's Stamina II	\N	medium
+1372	ws_skill_tec_m_5_3.png	Knightcode's Verity III	\N	big
+1373	ws_skill_hp_m_6_1.png	Mistfall's Aegis	\N	small
+1374	ws_skill_hp_m_5_2.png	Knightcode's Aegis II	\N	medium
+1375	ws_skill_whole_m_3_2.png	Lifetree's Stamina II	\N	medium
+1376	ws_skill_tec_m_3_3.png	Lifetree's Verity III	\N	big
+1377	ws_skill_eye_m_6.png	Mistfall's Heed III	\N	small
+1378	ws_skill_train_m_1_3.png	Ironflame's Tempering III	\N	big
+1379	ws_skill_atk_m_1_1.png	Ironflame's Might	\N	small
+1380	ws_skill_heal_limit_m_2_3.png	Oceansoul's Healing III	\N	big
+1381	ws_skill_wa_m_3_1.png	Oceansoul's Sweep III	\N	big
+1382	ws_skill_deadly_m_6_2.png	Mistfall's Sentence II	\N	medium
+1383	ws_skill_atk_m_5_3.png	Knightcode's Might III	\N	big
+1384	ws_skill_whole_m_1_3.png	Ironflame's Stamina III	\N	big
+1385	ws_skill_coki_m_4.png	Stormwyrm's Restraint II	\N	medium
+1386	ws_skill_coki_m_6.png	Mistfall's Restraint II	\N	medium
+1387	ws_skill_magna_1.png	Omega Exalto Ardendi	\N	\N
+1388	ws_skill_job_weapon.png	Iron's Vivification	\N	\N
+1389	ws_skill_hp_m_1_2.png	Ironflame's Aegis II	\N	medium
+1390	ws_skill_atk_m_6_2.png	Mistfall's Might II	\N	medium
+1391	ws_skill_deadly_m_1_2.png	Ironflame's Sentence II	\N	medium
+1392	ws_skill_counter_m_1_3.png	Ironflame's Clarity III	\N	\N
+1393	ws_skill_coki_m_2.png	Oceansoul's Restraint II	\N	medium
+1394	ws_skill_me_m_3_1.png	Ironflame's Gauntlet III	\N	big
+1395	ws_skill_counter_m_1_2.png	Ironflame's Clarity II	\N	\N
+1396	ws_skill_counter_m_5_2.png	Knightcode's Clarity II	\N	\N
+1397	ws_skill_magna_6.png	Omega Exalto Caliginis	\N	\N
+1398	ws_skill_job_weapon.png	Mist's Vivification	\N	\N
+1399	ws_skill_hp_m_2_2.png	Oceansoul's Aegis II	\N	medium
+1400	ws_skill_will_m_5_1.png	Knightcode's Resolve II	\N	medium
+1401	ws_skill_job_weapon.png	Sephira Legio Aquae	\N	\N
+1402	ws_skill_hp_m_6_2.png	Mistfall's Aegis II	\N	medium
+1403	ws_skill_nirrti_m_3.png	Lifetree's Haunt II	\N	medium
+1404	ws_skill_atk_m_2_2.png	Oceansoul's Might II	\N	medium
+1405	ws_skill_deadly_m_2_2.png	Oceansoul's Sentence II	\N	medium
+1406	ws_skill_whole_m_4_2.png	Stormwyrm's Stamina II	\N	medium
+1407	ws_skill_tec_m_4_3.png	Stormwyrm's Verity III	\N	big
+1408	ws_skill_whole_m_6_3.png	Mistfall's Stamina III	\N	big
+1409	ws_skill_primal_m_4.png	Stormwyrm's Essence II	\N	medium
+1410	ws_skill_train_m_6_3.png	Mistfall's Tempering III	\N	big
+1411	ws_skill_tec_m_6_1.png	Mistfall's Verity	\N	small
+1412	ws_skill_magna_3.png	Omega Exalto Terrae	\N	\N
+1413	ws_skill_job_weapon.png	Life's Vivification	\N	\N
+1414	ws_skill_magna_2.png	Omega Exalto Aquae	\N	\N
+1415	ws_skill_job_weapon.png	Ocean's Vivification	\N	\N
+1416	ws_skill_job_weapon.png	Bulwark's Nature	\N	\N
+1417	ws_skill_job_weapon.png	Bulwark's Apex	\N	\N
+1418	ws_skill_whole_m_2_3.png	Oceansoul's Stamina III	\N	big
+1419	ws_skill_ta_tec_m_2_1.png	Oceansoul's Spearhead	\N	small
+1420	ws_skill_job_weapon.png	Baneful Hellbringer's Sanctity	\N	\N
+1421	ws_skill_job_weapon.png	Stormwyrm's Progression III	\N	big
+1422	ws_skill_job_weapon.png	Sephira Manus Aquae	\N	\N
+1423	ws_skill_hero_m_3_3.png	Lifetree's Glory III	\N	big
+1424	ws_skill_coki_m_3_1.png	Lifetree's Restraint	\N	small
+1425	ws_skill_guard_m_3_2.png	Lifetree's Garrison II	\N	medium
+1426	ws_skill_ta_heal_limit_m_3_2.png	Lifetree's Sapience II	\N	medium
+1427	ws_skill_hp_ta_m_2_2.png	Oceansoul's Encouragement II	\N	medium
+1428	ws_skill_heal_limit_m_2_2.png	Oceansoul's Healing II	\N	medium
+1429	ws_skill_optimus_6.png	Optimus Exalto Caliginis	\N	\N
+1430	ws_skill_concurrent_attack_6_3.png	Oblivion's Deathstrike	\N	\N
+1431	ws_skill_job_weapon.png	Ultimate Wisdom's Shine	\N	\N
+1432	ws_skill_secret_2_3.png	Hoarfrost's Crux	\N	\N
+1433	ws_skill_job_weapon.png	Strike: Earth	\N	\N
+1434	ws_skill_job_weapon.png	Litus Mysticum	\N	\N
+1435	ws_skill_job_weapon.png	Heaven-Eye's Light	\N	\N
+1436	ws_skill_job_weapon.png	Sephira Manus Terra	\N	\N
+1437	ws_skill_tec_5_3.png	Zion's Verity	\N	big
+1438	ws_skill_hp_heal_limit_6_2.png	Hatred's Auspice	\N	medium
+1439	ws_skill_job_weapon.png	Sephira Salire Terra	\N	\N
+1440	ws_skill_job_weapon.png	Empyrean Adjudicator's Jurisdiction	\N	\N
+1441	ws_skill_deadly_1_2.png	Hellfire's Sentence	\N	medium
+1442	ws_skill_job_weapon.png	Blaze's Quenching	\N	\N
+1443	ws_skill_job_weapon.png	Lifetree's Progression III	\N	big
+1444	ws_skill_ta_tec_1_1.png	Fire's Spearhead	\N	small
+1445	ws_skill_train_4_3.png	Ventosus's Tempering	\N	big
+1446	ws_skill_job_weapon.png	Dualblade Flash's Bond	\N	\N
+1447	ws_skill_job_weapon.png	Dawnfinder's Calm	\N	\N
+1448	ws_skill_atk_a_1_2.png	Clawed Blaze	\N	medium
+1449	ws_skill_optimus_3.png	Optimus Exalto Terrae	\N	\N
+1450	ws_skill_normal_rise_3_3.png	Terra's Demolishment	\N	\N
+1451	ws_skill_god_m_5_3.png	Knightcode's Trituration	\N	\N
+1452	ws_skill_job_weapon.png	Sephira Legio Tenebris	\N	\N
+1453	ws_skill_hp_whole_4_2.png	Whirlwind's Verve	\N	medium
+1454	ws_skill_job_weapon.png	Defender's Vow	\N	\N
+1455	ws_skill_job_weapon.png	Argent Halberd	\N	\N
+1456	ws_skill_job_weapon.png	Sephira Salire Tenebris	\N	\N
+1457	ws_skill_heal_limit_6_1.png	Dark's Healing	\N	small
+1458	ws_skill_job_weapon.png	Oceansoul's Progression III	\N	big
+1459	ws_skill_job_weapon.png	Elysian Windrider's Jurisdiction	\N	\N
+1460	ws_skill_sp_limit_4.png	Ventosus's Enmity	\N	big
+1461	ws_skill_musou_2_2.png	Aquae Excelsior	\N	\N
+1462	ws_skill_hp_heal_limit_6_1.png	Dark's Auspice	\N	small
+1463	ws_skill_whole_4_2.png	Gale Green Blow	\N	\N
+1464	ws_skill_tec_5_1.png	Luminis Excelsior	\N	\N
+1465	ws_skill_heal_limit_1_2.png	Hellfire's Tempering	\N	medium
+1466	ws_skill_atk_a_2_4.png	Glacial's Supremacy	\N	massive
+1467	ws_skill_guard_6_2.png	Hatred's Majesty	\N	medium
+1468	ws_skill_guard_3_3.png	Ridge's Fortitude	\N	\N
+1469	ws_skill_secret_2_3.png	Bow Voltage	\N	\N
+1470	ws_skill_atk_6_1.png	Purgatory's Spectacle	\N	\N
+1471	ws_skill_tec_3_3.png	Earth's Might	\N	small
+1472	ws_skill_job_weapon.png	Holy Knight's Apex	\N	\N
+1473	ws_skill_job_weapon.png	Holy Knight's Nature	\N	\N
+1474	ws_skill_job_weapon.png	Holy Knight's Prowess	\N	\N
+1475	ws_skill_job_weapon.png	King's Apex	\N	\N
+1476	ws_skill_job_weapon.png	King's Nature	\N	\N
+1477	ws_skill_job_weapon.png	King's Prowess	\N	\N
+1478	ws_skill_job_weapon.png	Legend's Apex	\N	\N
+1479	ws_skill_job_weapon.png	Legend's Nature	\N	\N
+1480	ws_skill_job_weapon.png	Legend's Prowess	\N	\N
+1481	ws_skill_job_weapon.png	Pillar-Smasher's Conviction	\N	\N
+1482	ws_skill_job_weapon.png	Katana Voltage II	\N	\N
+1483	ws_skill_job_weapon.png	Cyclic Rebirth's Reverie	\N	\N
+1484	ws_skill_atk_a_6_3.png	Hell Mode	\N	big
+1485	ws_skill_job_weapon.png	Drago Surge	\N	\N
+1486	ws_skill_hero_1_2.png	Hellfire's Glory	\N	medium
+1487	ws_skill_job_weapon.png	Strike: Fire	\N	\N
+1488	ws_skill_hp_heal_limit_5_2.png	Thunder's Auspice	\N	medium
+1489	ws_skill_job_weapon.png	Sephira Legio Ventus	\N	\N
+1490	ws_skill_job_weapon.png	Through Tempest and Torrent	\N	\N
+1491	ws_skill_job_weapon.png	Undaunted Cyclone	\N	\N
+1492	ws_skill_job_weapon.png	Sephira Salire Ventus	\N	\N
+1493	ws_skill_optimus_2.png	Optimus Exalto Aquae	\N	\N
+1494	ws_skill_tec_rise_2_3.png	Hoarfrost's Stratagem	\N	\N
+1495	ws_skill_job_weapon.png	Mistfall's Progression II	\N	medium
+1496	ws_skill_job_weapon.png	Mistfall's Progression III	\N	big
+1497	ws_skill_job_weapon.png	Chthonian Bewailer's Jurisdiction	\N	\N
+1498	ws_skill_noroi_3.png	Terra's Insignia	\N	big
+1499	ws_skill_job_weapon.png	Cloud of Howling Twilight	\N	\N
+1500	ws_skill_atk_a_5_3.png	Asuna's Artifact	\N	big
+1501	ws_skill_job_weapon.png	Big-Sword Mode	\N	\N
+1502	ws_skill_atk_a_4_3.png	Magical Activation Item	\N	big
+1503	ws_skill_job_weapon.png	Father's Memento	\N	\N
+1504	ws_skill_guard_6_1.png	Dark's Garrison	\N	small
+1505	ws_skill_job_weapon.png	Blaze's Spectacle	\N	\N
+1506	ws_skill_penetrate_defense_1_3.png	Inferno's Impalement	\N	\N
+1507	ws_skill_job_weapon.png	Scarlet Swashbuckler	\N	\N
+1508	ws_skill_job_weapon.png	Sephira Legio Ignis	\N	\N
+1509	ws_skill_hp_heal_limit_5_1.png	Light's Auspice	\N	small
+1510	ws_skill_job_weapon.png	Sephira Telum Ignis	\N	\N
+1511	ws_skill_job_weapon.png	Ridge's Spectacle	\N	\N
+1512	ws_skill_job_weapon.png	Glimmer's Prowess	\N	\N
+1513	ws_skill_penetrate_defense_5_3.png	Zion's Impalement	\N	\N
+1514	ws_skill_job_weapon.png	Golden Athos	\N	\N
+1515	ws_skill_job_weapon.png	Conjurer's Sapience	\N	\N
+1516	ws_skill_job_weapon.png	Conjurer's Erudition	\N	\N
+1517	ws_skill_job_weapon.png	Conjurer's Acumen	\N	\N
+1518	ws_skill_job_weapon.png	Resplendent Ruler's Jurisdiction	\N	\N
+1519	ws_skill_job_weapon.png	Physician-Seer's Sapience	\N	\N
+1520	ws_skill_job_weapon.png	Physician-Seer's Erudition	\N	\N
+1521	ws_skill_job_weapon.png	Physician-Seer's Acumen	\N	\N
+1522	ws_skill_job_weapon.png	Exorcist's Sapience	\N	\N
+1523	ws_skill_job_weapon.png	Exorcist's Erudition	\N	\N
+1524	ws_skill_job_weapon.png	Exorcist's Acumen	\N	\N
+1525	ws_skill_job_weapon.png	Strike: Dark	\N	\N
+1526	ws_skill_ta_2_3.png	Hoarfrost's Trium	\N	big
+1527	ws_skill_tyrant_5.png	Zion's Bloodshed	\N	big
+1528	ws_skill_job_weapon.png	Knightcode's Progression II	\N	medium
+1529	ws_skill_job_weapon.png	Knightcode's Progression III	\N	big
+1530	ws_skill_blood_rage_3_2.png	Mountain's Bloodrage	\N	medium
+1531	ws_skill_concurrent_attack_3_2.png	Mountain's Deathstrike	\N	\N
+1532	ws_skill_tec_rise_3_2.png	Mountain's Stratagem	\N	\N
+1533	ws_skill_whole_4_1.png	Wind's Stamina	\N	small
+1534	ws_skill_job_weapon.png	Searing Enlightener's Jurisdiction	\N	\N
+1535	ws_skill_job_weapon.png	Strike: Light	\N	\N
+1536	ws_skill_job_weapon.png	Strike: Water	\N	\N
+1537	ws_skill_job_weapon.png	Snowfall's Prowess	\N	\N
+1538	ws_skill_train_3_2.png	Mountain's Tempering	\N	medium
+1539	ws_skill_job_weapon.png	Staff Wrath	\N	\N
+1540	ws_skill_job_weapon.png	Revenger's Calling	\N	\N
+1541	ws_skill_job_weapon.png	Revenger's Pride	\N	\N
+1542	ws_skill_job_weapon.png	Revenger's Genius	\N	\N
+1543	ws_skill_job_weapon.png	Rikishi's Calling	\N	\N
+1544	ws_skill_job_weapon.png	Rikishi's Pride	\N	\N
+1545	ws_skill_job_weapon.png	Rikishi's Genius	\N	\N
+1546	ws_skill_job_weapon.png	Trovador's Calling	\N	\N
+1547	ws_skill_job_weapon.png	Trovador's Pride	\N	\N
+1548	ws_skill_job_weapon.png	Trovador's Genius	\N	\N
+1549	ws_skill_atk_a_4_3.png	Heavy-Metal Body	\N	big
+1550	ws_skill_job_weapon.png	Made For Killua	\N	\N
+1551	ws_skill_job_weapon.png	Baneful Hellbringer's Jurisdiction	\N	\N
+1552	ws_skill_atk_a_3_3.png	Boulder Breaker	\N	big
+1553	ws_skill_job_weapon.png	First Comes Rock	\N	\N
+1554	ws_skill_job_weapon.png	Snowfall's Maneuver	\N	\N
+1555	ws_skill_job_weapon.png	Glimmer's Maneuver	\N	\N
+1556	ws_skill_job_weapon.png	Purgatory's Maneuver	\N	\N
+1557	ws_skill_penetrate_defense_6_3.png	Oblivion's Impalement	\N	\N
+1558	ws_skill_job_weapon.png	Graphite Athos	\N	\N
+1559	ws_skill_coki_2_2.png	Tsunami's Restraint	\N	medium
+1560	ws_skill_special_skill_concurrent_attack_2_3.png	Hoarfrost's Onslaught	\N	\N
+1561	ws_skill_penetrate_defense_2_3.png	Hoarfrost's Impalement	\N	\N
+1562	ws_skill_job_weapon.png	Cobalt Porthos	\N	\N
+1563	ws_skill_noroi_6.png	Oblivion's Insignia	\N	big
+1564	ws_skill_train_2_2.png	Tsunami's Tempering	\N	medium

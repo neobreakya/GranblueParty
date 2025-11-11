@@ -192,6 +192,27 @@ function getOpusThirdOmega(name, keyid, element) {
       level: 1,
       keyid: keyid,
     },
+    {
+      name: 'Divine Fire\'s Ruination',
+      icon: 'ws_skill_job_weapon.png',
+      desc: 'Pendulum of Extremity',
+      level: 1,
+      keyid: keyid,
+    },
+    {
+      name: 'Divine Fire\'s Honing',
+      icon: 'ws_skill_job_weapon.png',
+      desc: 'Pendulum of Sagacity',
+      level: 1,
+      keyid: keyid,
+    },
+    {
+      name: 'Divine Fire\'s Fathoms',
+      icon: 'ws_skill_job_weapon.png',
+      desc: 'Pendulum of Supremacy',
+      level: 1,
+      keyid: keyid,
+    },
   ]
 }
 
@@ -286,6 +307,27 @@ function getOpusThirdOptimus(name1, name2, keyid, element) {
       name: 'Deceitful Fallacy',
       icon: 'ws_skill_job_weapon.png',
       desc: 'Chain of Falsehood',
+      level: 1,
+      keyid: keyid,
+    },
+    {
+      name: 'Divine Fire\'s Ruination',
+      icon: 'ws_skill_job_weapon.png',
+      desc: 'Pendulum of Extremity',
+      level: 1,
+      keyid: keyid,
+    },
+    {
+      name: 'Divine Fire\'s Honing',
+      icon: 'ws_skill_job_weapon.png',
+      desc: 'Pendulum of Sagacity',
+      level: 1,
+      keyid: keyid,
+    },
+    {
+      name: 'Divine Fire\'s Fathoms',
+      icon: 'ws_skill_job_weapon.png',
+      desc: 'Pendulum of Supremacy',
       level: 1,
       keyid: keyid,
     },
