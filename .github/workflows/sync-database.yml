@@ -1,0 +1,59 @@
+name: Sync Database to Railway
+
+on:
+  # Manual trigger - you decide when to run it
+  workflow_dispatch:
+    inputs:
+      backup_file:
+        description: 'Path to backup file in repo (e.g., gbf_backup.sql)'
+        required: true
+        default: 'gbf_backup.sql'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Verify backup file exists
+        run: |
+          if [ ! -f "${{ github.event.inputs.backup_file }}" ]; then
+            echo "Error: Backup file not found: ${{ github.event.inputs.backup_file }}"
+            exit 1
+          fi
+          echo "Backup file found: $(du -h ${{ github.event.inputs.backup_file }})"
+
+      - name: Sync database to Railway
+        env:
+          RAILWAY_API_URL: ${{ secrets.RAILWAY_API_URL }}
+          ADMIN_SECRET: ${{ secrets.ADMIN_SECRET }}
+          BACKUP_FILE_PATH: ${{ github.event.inputs.backup_file }}
+        run: |
+          # Call the sync endpoint
+          RESPONSE=$(curl -X POST "$RAILWAY_API_URL/admin/sync-database" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"backupFilePath\": \"$BACKUP_FILE_PATH\",
+              \"adminSecret\": \"$ADMIN_SECRET\"
+            }")
+
+          echo "Response: $RESPONSE"
+
+          # Check if successful
+          if echo "$RESPONSE" | grep -q '"success":true'; then
+            echo "✓ Database sync successful"
+            exit 0
+          else
+            echo "✗ Database sync failed"
+            echo "$RESPONSE"
+            exit 1
+          fi
+
+      - name: Notify on success
+        if: success()
+        run: echo "✓ Database successfully synced to Railway"
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "✗ Database sync failed - check logs above"
