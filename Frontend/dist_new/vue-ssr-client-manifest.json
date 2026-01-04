@@ -1,0 +1,367 @@
+{
+  "publicPath": "/",
+  "all": [
+    "main-9f343acd7e72f0a4d91a.js",
+    "manifest-ad5a650b158cfc5b42eb.js",
+    "calcbullets-4506d83e444bda269265.js",
+    "builder-a816bc0de962020f077b.js",
+    "collection-61898542a3ffe3394fb7.js",
+    "privacy-0965fb234c9e4a95e520.js",
+    "main-00b3cb61b3a942e0e0dd.css",
+    "search-c026a2f5e9bcd638c587.js",
+    "spark-9b948f25725b758b2d88.js",
+    "gw-cdf27340e842efa51dc7.js",
+    "daily-3e886564f6373db4a807.js",
+    "calcdread-266b7c826a8d7305834a.js",
+    "teams-92f6dd3d7aba2d8ec67e.js",
+    "favicon.ico",
+    "replicard-12bd251d5717ff298d3d.js",
+    "calcevent-3def62ab01da1c5aa5cd.js",
+    "friend-21ed0854c1f314051e15.js",
+    "eternal-65bc4ea640eaf5c389b4.js",
+    "evoker-9038865d1bc5e6b6d6fa.js",
+    "schedule-12245cb329205e6d32f7.js",
+    "cookies-5a609fd4dc7ade070952.js",
+    "favicon-96.png",
+    "roomname-27945b7edbf96e8ea0f1.js",
+    "index-097422da8d545f1f6cb0.js",
+    "reset-fc42ad0c03814fa5829b.js",
+    "favicon-64.png",
+    "account-296e1e44fcbfd2cb3cb3.js",
+    "error-193396de6087d947f83d.js",
+    "sitemap.xml",
+    "favicon-32.png",
+    "favicon.png",
+    "sitemap.xml.gz",
+    "robots.txt",
+    "builder-0c42ee74dff8838c62ba.css",
+    "teams-0c42ee74dff8838c62ba.css",
+    "ads.txt"
+  ],
+  "initial": [
+    "main-00b3cb61b3a942e0e0dd.css",
+    "main-9f343acd7e72f0a4d91a.js"
+  ],
+  "async": [
+    "manifest-ad5a650b158cfc5b42eb.js",
+    "calcbullets-4506d83e444bda269265.js",
+    "builder-a816bc0de962020f077b.js",
+    "collection-61898542a3ffe3394fb7.js",
+    "privacy-0965fb234c9e4a95e520.js",
+    "search-c026a2f5e9bcd638c587.js",
+    "spark-9b948f25725b758b2d88.js",
+    "gw-cdf27340e842efa51dc7.js",
+    "daily-3e886564f6373db4a807.js",
+    "calcdread-266b7c826a8d7305834a.js",
+    "teams-92f6dd3d7aba2d8ec67e.js",
+    "replicard-12bd251d5717ff298d3d.js",
+    "calcevent-3def62ab01da1c5aa5cd.js",
+    "friend-21ed0854c1f314051e15.js",
+    "eternal-65bc4ea640eaf5c389b4.js",
+    "evoker-9038865d1bc5e6b6d6fa.js",
+    "schedule-12245cb329205e6d32f7.js",
+    "cookies-5a609fd4dc7ade070952.js",
+    "roomname-27945b7edbf96e8ea0f1.js",
+    "index-097422da8d545f1f6cb0.js",
+    "reset-fc42ad0c03814fa5829b.js",
+    "account-296e1e44fcbfd2cb3cb3.js",
+    "error-193396de6087d947f83d.js",
+    "builder-0c42ee74dff8838c62ba.css",
+    "teams-0c42ee74dff8838c62ba.css"
+  ],
+  "modules": {
+    "512e4ceb": [
+      6,
+      0
+    ],
+    "59dbdcc6": [
+      6,
+      0
+    ],
+    "0ef466f8": [
+      6,
+      0
+    ],
+    "6b4869c5": [
+      6,
+      0
+    ],
+    "46625f81": [
+      6,
+      0
+    ],
+    "46627b15": [
+      6,
+      0
+    ],
+    "1ded9e6d": [
+      6,
+      0
+    ],
+    "2328574c": [
+      6,
+      0
+    ],
+    "2863102b": [
+      6,
+      0
+    ],
+    "4f1a30c4": [
+      6,
+      0
+    ],
+    "574b4d03": [
+      6,
+      0
+    ],
+    "ba51b838": [
+      6,
+      0
+    ],
+    "d4d49b7a": [
+      6,
+      0
+    ],
+    "6390e425": [
+      6,
+      0
+    ],
+    "14f21188": [
+      6,
+      0
+    ],
+    "3cc072f4": [
+      6,
+      0
+    ],
+    "2916e4a8": [
+      6,
+      0
+    ],
+    "60932b64": [
+      23
+    ],
+    "a1dbf09a": [
+      33,
+      3
+    ],
+    "e9524b68": [
+      4
+    ],
+    "482c8be9": [
+      4
+    ],
+    "aa11de82": [
+      26
+    ],
+    "0789ecc8": [
+      24
+    ],
+    "278071fa": [
+      17
+    ],
+    "3ddb4e66": [
+      18
+    ],
+    "406a69ae": [
+      2
+    ],
+    "173eff3a": [
+      9
+    ],
+    "2562b957": [
+      15
+    ],
+    "4aedc292": [
+      11
+    ],
+    "734c63d0": [
+      19
+    ],
+    "5e9442c6": [
+      16
+    ],
+    "2aad78d9": [
+      10
+    ],
+    "1f653338": [
+      22
+    ],
+    "5d911a86": [
+      7
+    ],
+    "71c6f7ef": [
+      8
+    ],
+    "7e40ba7c": [
+      14
+    ],
+    "f1720b70": [
+      34,
+      12
+    ],
+    "11adc821": [
+      20
+    ],
+    "5e1af6cc": [
+      5
+    ],
+    "59f57e32": [
+      27
+    ],
+    "59a0f12c": [
+      27
+    ],
+    "4735a013": [
+      6,
+      0
+    ],
+    "0a0528e2": [
+      6,
+      0
+    ],
+    "ebc31ddc": [
+      6,
+      0
+    ],
+    "0989519a": [
+      6,
+      0
+    ],
+    "48764a62": [
+      6,
+      0
+    ],
+    "a4885fd8": [
+      1
+    ],
+    "7e572162": [
+      1
+    ],
+    "1c9e72a9": [
+      1
+    ],
+    "272a88ec": [
+      1
+    ],
+    "dc425eb8": [
+      1
+    ],
+    "35111b5a": [
+      1
+    ],
+    "18ff85ee": [
+      1
+    ],
+    "06e24ab5": [
+      1
+    ],
+    "d6ee4d56": [
+      1
+    ],
+    "70edb5a3": [
+      1
+    ],
+    "37ba3dcc": [
+      1
+    ],
+    "77507d70": [
+      1
+    ],
+    "bc7a8f18": [
+      1
+    ],
+    "4fe9bfea": [
+      1
+    ],
+    "220af79b": [
+      1
+    ],
+    "9524867a": [
+      1
+    ],
+    "10b7933e": [
+      4
+    ],
+    "3030af38": [
+      1
+    ],
+    "233756f2": [
+      1
+    ],
+    "90468c9e": [
+      1
+    ],
+    "e821ec74": [
+      8
+    ],
+    "fd7e8e20": [
+      6,
+      0
+    ],
+    "ca361c50": [
+      1
+    ],
+    "1c9a2059": [
+      1
+    ],
+    "64ff3ef0": [
+      6,
+      0
+    ],
+    "d90933a8": [
+      6,
+      0
+    ],
+    "d908ce36": [
+      1
+    ],
+    "2e7a468c": [
+      1
+    ],
+    "7d0ff01e": [
+      6,
+      0
+    ],
+    "0c744d0c": [
+      6,
+      0
+    ],
+    "53ea0e9a": [
+      6,
+      0
+    ],
+    "0217b13a": [
+      6,
+      0
+    ],
+    "1929b3d4": [
+      6,
+      0
+    ],
+    "6fbc4fdc": [
+      6,
+      0
+    ],
+    "691f1e8a": [
+      6,
+      0
+    ],
+    "34c750e2": [
+      6,
+      0
+    ],
+    "130c4394": [
+      6,
+      0
+    ],
+    "b8250572": [
+      6,
+      0
+    ],
+    "594d331d": [
+      6,
+      0
+    ]
+  }
+}

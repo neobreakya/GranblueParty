@@ -203,6 +203,7 @@ def downloadCategory(path, category):
   limit = 500
   cmcontinue = ''
 
+  print(f"Downloading {category} category...")
   while True:
     params = {
       'action': 'query',
@@ -246,6 +247,8 @@ def updateCache(category):
     data = json.load(fd)
     data_revs = json.load(fd_revs)
 
+    print(f"Caching {category} pages...")
+    downloaded_count = 0
     for unit in data:
       page_id = str(unit['pageid'])
       page_name = os.path.join(cache_dir, page_id + '.page')
@@ -255,7 +258,9 @@ def updateCache(category):
         continue
 
       if not os.path.isfile(page_name) or not page_id in data_revs or data_revs[page_id] != unit['lastrevid']:
-        print("Downloading ", page_title, ' [' + page_id + ']')
+        downloaded_count += 1
+        if downloaded_count % 50 == 0:
+          print(f"  Downloaded {downloaded_count} pages...")
         time.sleep(.1) # Don't hammer the server
         request = seleniumGet(
           url = 'https://gbf.wiki/api.php',
@@ -304,16 +309,29 @@ def downloadNewData():
   time.sleep(.1)
 
 
+def cleanTemplateValue(raw_value):
+  """Remove HTML comments and extra whitespace from template values"""
+  result = str(raw_value).strip()
+  # Remove HTML comments: <!-- ... -->
+  while '<!--' in result:
+    start = result.find('<!--')
+    end = result.find('-->')
+    if end != -1:
+      result = result[:start] + result[end+3:]
+    else:
+      result = result[:start]
+  return result.strip()
+
 def getTemplateValue(template, value):
   try:
-    return str(template.get(value).value).strip()
+    return cleanTemplateValue(template.get(value).value)
   except:
     print(str(template.get('name').value).strip(), str(template.get('id').value).strip())
     raise
 
 def getTemplateValueOrDefault(template, value, default):
   if template.has(value):
-    result = str(template.get(value).value).strip()
+    result = cleanTemplateValue(template.get(value).value)
     if len(result) > 0:
       return result
   return default

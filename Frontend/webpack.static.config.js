@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
-const { merge } = require('webpack-merge')
-const path = require("path");
-const baseConfig = require('./webpack.base.config.js')
+const { merge } = require('webpack-merge');
+const path = require('path');
+const baseConfig = require('./webpack.base.config.js');
 
 const CopyPlugin = require('copy-webpack-plugin');
 const RemovePlugin = require('remove-files-webpack-plugin');
@@ -15,7 +15,7 @@ module.exports = merge(baseConfig, {
   entry: './src/app-deps.js',
   output: {
     path: path.join(__dirname, dist_path),
-    filename: 'garbage.js'
+    filename: 'garbage.js',
   },
   module: {
     rules: [
@@ -24,21 +24,22 @@ module.exports = merge(baseConfig, {
         type: 'asset/resource',
         generator: {
           filename: '[name][ext]',
-        }
+        },
       },
-    ]
+    ],
   },
   plugins: [
-    new CopyPlugin( { patterns: [
-      { from: path.resolve(__dirname, 'src', 'img_opti'), to: 'img' }
-    ]} ),
+    new CopyPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, 'src', 'img_opti'), to: 'img' },
+        { from: path.resolve(__dirname, 'src', 'img'), to: 'img' },
+      ],
+    }),
     new RemovePlugin({
       after: {
         root: './' + dist_path,
-        include: [
-          'garbage.js',
-        ]
-      }
-    })
-  ]
-})
+        include: ['garbage.js'],
+      },
+    }),
+  ],
+});

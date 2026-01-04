@@ -1,0 +1,1 @@
+/*! dom-to-image-more 17-06-2019 */

@@ -1099,12 +1099,12 @@
   },
   {
     "class": "Bandit Tycoon",
-    "name": "Spring&#039;s Gate",
+    "name": "Spring's Gate",
     "ix": "ex4",
     "family": "thief",
     "row": "4",
     "ex": "1",
-    "icon": "Ability Spring&#039;s Gate.png"
+    "icon": "Ability Spring's Gate.png"
   },
   {
     "class": "Bandit Tycoon",
@@ -1243,12 +1243,12 @@
   },
   {
     "class": "Cavalier",
-    "name": "Horseman&#039;s Duty",
+    "name": "Horseman's Duty",
     "ix": "s1",
     "family": "cavalier",
     "row": "4",
     "ex": "0",
-    "icon": "Ability Horseman&#039;s Duty.png"
+    "icon": "Ability Horseman's Duty.png"
   },
   {
     "class": "Cavalier",
@@ -1576,12 +1576,12 @@
   },
   {
     "class": "Lumberjack",
-    "name": "Woodcutter&#039;s Song",
+    "name": "Woodcutter's Song",
     "ix": "s1",
     "family": "lumberjack",
     "row": "4",
     "ex": "0",
-    "icon": "Ability Woodcutter&#039;s Song.png"
+    "icon": "Ability Woodcutter's Song.png"
   },
   {
     "class": "Lumberjack",
@@ -1963,7 +1963,7 @@
   },
   {
     "class": "Sage",
-    "name": "Cathedral&#039;s Benison",
+    "name": "Cathedral's Benison",
     "ix": "umex3",
     "family": "priest",
     "row": "4",
@@ -2476,7 +2476,7 @@
   },
   {
     "class": "Street King",
-    "name": "Parfait d&#039;Amour",
+    "name": "Parfait d'Amour",
     "ix": "ex2",
     "family": "thief",
     "row": "5",
@@ -2782,7 +2782,7 @@
   },
   {
     "class": "Gunslinger",
-    "name": "Lock &#039;n&#039; Load",
+    "name": "Lock 'n' Load",
     "ix": "s3",
     "family": "gunslinger",
     "row": "11",
@@ -3088,7 +3088,7 @@
   },
   {
     "class": "Glorybringer",
-    "name": "Mastery&#039;s Edge",
+    "name": "Mastery's Edge",
     "ix": "umex3",
     "family": "swordmaster",
     "row": "12",
@@ -3223,12 +3223,12 @@
   },
   {
     "class": "Nekomancer",
-    "name": "Black Cat&#039;s Path",
+    "name": "Black Cat's Path",
     "ix": "ex1",
     "family": "mystic",
     "row": "12",
     "ex": "1",
-    "icon": "Ability Black Cat&#039;s Path.png"
+    "icon": "Ability Black Cat's Path.png"
   },
   {
     "class": "Nekomancer",
@@ -3250,12 +3250,12 @@
   },
   {
     "class": "Nekomancer",
-    "name": "Cat&#039;s Meow",
+    "name": "Cat's Meow",
     "ix": "s1",
     "family": "mystic",
     "row": "12",
     "ex": "0",
-    "icon": "Ability Cat&#039;s Meow.png"
+    "icon": "Ability Cat's Meow.png"
   },
   {
     "class": "Nekomancer",

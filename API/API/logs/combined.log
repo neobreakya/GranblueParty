@@ -1,0 +1,72 @@
+2026-01-03T00:33:30.380Z error: 	uncaughtException: ENOENT: no such file or directory, watch 'db.version'
+Error: ENOENT: no such file or directory, watch 'db.version'
+    at FSWatcher.<computed> (node:internal/fs/watchers:254:19)
+    at Object.watch (node:fs:2534:36)
+    at Object.<anonymous> (C:\Users\neobr\git projects\GranblueParty\API\src\/index.js:41:4)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Module._compile (C:\Users\neobr\git projects\GranblueParty\API\node_modules\pirates\lib\index.js:129:24)
+    at node:internal/modules/cjs/loader:1824:10
+    at Object.newLoader [as .js] (C:\Users\neobr\git projects\GranblueParty\API\node_modules\pirates\lib\index.js:134:7)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.runMain (node:internal/modules/run_main:152:5)
+    at Object.<anonymous> (C:\Users\neobr\git projects\GranblueParty\API\node_modules\@babel\node\src\_babel-node.ts:187:12)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1824:10)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)
+    at node:internal/main/run_main_module:33:47
+2026-01-03T00:33:40.587Z error: 	uncaughtException: ENOENT: no such file or directory, watch 'db.version'
+Error: ENOENT: no such file or directory, watch 'db.version'
+    at FSWatcher.<computed> (node:internal/fs/watchers:254:19)
+    at Object.watch (node:fs:2534:36)
+    at Object.<anonymous> (C:\Users\neobr\git projects\GranblueParty\API\src\/index.js:41:4)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Module._compile (C:\Users\neobr\git projects\GranblueParty\API\node_modules\pirates\lib\index.js:129:24)
+    at node:internal/modules/cjs/loader:1824:10
+    at Object.newLoader [as .js] (C:\Users\neobr\git projects\GranblueParty\API\node_modules\pirates\lib\index.js:134:7)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.runMain (node:internal/modules/run_main:152:5)
+    at Object.<anonymous> (C:\Users\neobr\git projects\GranblueParty\API\node_modules\@babel\node\src\_babel-node.ts:187:12)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1824:10)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)
+    at node:internal/main/run_main_module:33:47
+2026-01-03T00:33:50.499Z error: 	uncaughtException: ENOENT: no such file or directory, watch 'db.version'
+Error: ENOENT: no such file or directory, watch 'db.version'
+    at FSWatcher.<computed> (node:internal/fs/watchers:254:19)
+    at Object.watch (node:fs:2534:36)
+    at Object.<anonymous> (C:\Users\neobr\git projects\GranblueParty\API\src\/index.js:41:4)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Module._compile (C:\Users\neobr\git projects\GranblueParty\API\node_modules\pirates\lib\index.js:129:24)
+    at node:internal/modules/cjs/loader:1824:10
+    at Object.newLoader [as .js] (C:\Users\neobr\git projects\GranblueParty\API\node_modules\pirates\lib\index.js:134:7)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.runMain (node:internal/modules/run_main:152:5)
+    at Object.<anonymous> (C:\Users\neobr\git projects\GranblueParty\API\node_modules\@babel\node\src\_babel-node.ts:187:12)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14)
+    at Object.<anonymous> (node:internal/modules/cjs/loader:1824:10)
+    at Module.load (node:internal/modules/cjs/loader:1427:32)
+    at Module._load (node:internal/modules/cjs/loader:1250:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)
+    at node:internal/main/run_main_module:33:47
+2026-01-03T00:34:27.240Z info: 	Granblue Party REST API listening on port 3000
+2026-01-03T00:34:32.279Z info: 	Granblue Party REST API listening on port 3000
+2026-01-03T00:38:35.349Z info: 	Granblue Party REST API listening on port 3000
